@@ -9,6 +9,9 @@ import { PermissionError } from '../../../../errors/PermissionError';
 
 class UserService {
     async create(data: Omit<User, 'id' | 'createdAt'>) {
+
+        if (!data.email) throw new InvalidParamError('Email is required');
+        
         const user = await Prisma.user.findUnique({
             where: {
                 email: data.email
