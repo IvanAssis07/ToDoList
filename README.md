@@ -25,7 +25,7 @@ Há também rotas para as operações relacionadas a criação e manipulação d
 Será necessário seguir os seguintes passos para configurar e rodar o projeto:
 - Clonar o repo;
 - Instalar o node e npm na sua máquina;
-- Rodar npm install na raiz do projeto;
+- Rodar `npm install` na raiz do projeto;
 - Criar o arquivo .env na raiz do projeto como a seguir:
 ```
 PORT=3030
@@ -35,8 +35,9 @@ JWT_EXPIRATION='5h'
 NODE_ENV='development'
 SALT_ROUNDS='10'
 ```
-- Executar npm run dev para rodar o projeto;
-- Para rodar os testes bastar rodar npm test.
+- Executar `npm run dev` para rodar o projeto;
+- Para rodar os testes de unidade bastar rodar `npm test`.
+- Para rodar os tesetes de integração basta executar o comando `npm run test:integration`
 
 ## Extras:
 - Caso queiram ver o estado do banco rodem npx prisma studio;
