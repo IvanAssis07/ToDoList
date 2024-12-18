@@ -1,9 +1,8 @@
-import prisma from "../../../../config/integration-setup";
-import { userService } from "./userService";
 import bcrypt from 'bcrypt';
-import { InvalidParamError } from "../../../../errors/InvalidParamError";
-import { PermissionError } from "../../../../errors/PermissionError";
+import prisma from "../../../../config/integration-setup";
 import { ConflictError } from "../../../../errors/ConflictError";
+import { InvalidParamError } from "../../../../errors/InvalidParamError";
+import { userService } from "./userService";
 
 import type { User } from "@prisma/client";
 
